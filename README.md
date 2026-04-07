@@ -14,43 +14,72 @@ Embedded System | IoT | AI & AUTOMATION
 🚀 Tech Stack
 
 Backend: FastAPI
+
 Frontend: Streamlit
+
 NLP & Embeddings: Sentence Transformers (all-MiniLM-L6-v2)
+
 Similarity: Cosine Similarity
+
 LLM: Llama3-70B via Huggingface API
+
 PDF Parsing: PyMuPDF
+
 Language: Python 3.12
+
 📌 Problem Statement
+
 Traditional resume screening is:
 
 ⏳ Time-consuming
+
 ❌ Keyword-based and inaccurate
+
 ⚠️ Biased and inefficient
+
 🔍 Unable to capture semantic meaning
+
 This system solves these problems using semantic search + LLM analysis, enabling intelligent and fair candidate evaluation.
 
 🎯 Key Features
+
 📄 Upload resume (PDF)
+
 🧠 Semantic job matching (not keyword-based)
+
 📊 Match score (0–100%) with color coding
+
 🤖 AI-powered resume analysis
+
 💡 Skill extraction & strengths detection
+
 🎯 Suggested job roles
+
 ⚠️ Improvement recommendations
+
 🎤 Interview tips
+
 ⭐ Candidate rating (out of 100)
 
 🏗️ System Architecture
+
 User (Browser - Streamlit)
+
         ↓
 Frontend (Streamlit)
+
         ↓
 FastAPI Backend
+
         ↓
 1. PDF Extraction (pdfplumber)
+
 2. NLP Preprocessing
+
 3. Sentence Embeddings
+
 4. Cosine Similarity Matching
+
 5. LLM Analysis (Groq - Llama3-70B)
         ↓
 JSON Response
