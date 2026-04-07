@@ -2,11 +2,17 @@
 AI Resume Screening System: An intelligent hiring tool that uses NLP and Large Language Models to automatically parse resumes, extract skills, and rank candidates against a job description with detailed insights on strengths, weaknesses, and improvement suggestions.
 
 👨‍💻 Author
+
 Muhammad Arham Kakar
+
 Embedded System | IoT | AI & AUTOMATION
+
 📧 muhammadarhamkakar27@gmail.com
+
 🔗 GitHub | LinkedIn
+
 🚀 Tech Stack
+
 Backend: FastAPI
 Frontend: Streamlit
 NLP & Embeddings: Sentence Transformers (all-MiniLM-L6-v2)
