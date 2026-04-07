@@ -1,194 +1,181 @@
 # Matchify-AI-Resume-Screening-System
-AI Resume Screening System: An intelligent hiring tool that uses NLP and Large Language Models to automatically parse resumes, extract skills, and rank candidates against a job description with detailed insights on strengths, weaknesses, and improvement suggestions.
 
-👨‍💻 Author
+> An AI-powered full-stack recruitment platform that uses NLP, semantic embeddings, and LLMs to intelligently match resumes with job descriptions and provide deep candidate insights.
 
-Muhammad Arham Kakar
+---
 
-Embedded System | IoT | AI & AUTOMATION
+## 👨‍💻 Author
 
-📧 muhammadarhamkakar27@gmail.com
+**Muhammad Arham Kakar**  
+Embedded | IoT AI & Automation |   
+📧 muhammadarhamkakar27@gmail.com 
+🔗 [GitHub](https://github.com/ArhamKakar) | [LinkedIn](https://www.linkedin.com/in/muhammad-arham-kakar-6b2318352/)
 
-# Github | LinkedIn
+---
 
-# 🚀 Tech Stack
+## 🚀 Tech Stack
 
-Backend: FastAPI
+- **Backend:** FastAPI  
+- **Frontend:** Streamlit  
+- **NLP & Embeddings:** Sentence Transformers (`all-MiniLM-L6-v2`)  
+- **Similarity:** Cosine Similarity  
+- **LLM:** Llama3-70B via Huggingface API  
+- **PDF Parsing:**  PyMuPDF 
+- **Language:** Python 3.12  
 
-Frontend: Streamlit
+---
 
-NLP & Embeddings: Sentence Transformers (all-MiniLM-L6-v2)
-
-Similarity: Cosine Similarity
-
-LLM: Llama3-70B via Huggingface API
-
-PDF Parsing: PyMuPDF
-
-Language: Python 3.12
-
-# 📌 Problem Statement
+## 📌 Problem Statement
 
 Traditional resume screening is:
 
-⏳ Time-consuming
+- ⏳ Time-consuming  
+- ❌ Keyword-based and inaccurate  
+- ⚠️ Biased and inefficient  
+- 🔍 Unable to capture semantic meaning  
 
-❌ Keyword-based and inaccurate
+This system solves these problems using **semantic search + LLM analysis**, enabling intelligent and fair candidate evaluation.
 
-⚠️ Biased and inefficient
+---
 
-🔍 Unable to capture semantic meaning
+## 🎯 Key Features
 
-This system solves these problems using semantic search + LLM analysis, enabling intelligent and fair candidate evaluation.
+- 📄 Upload resume (PDF)
+- 🧠 Semantic job matching (not keyword-based)
+- 📊 Match score (0–100%) with color coding
+- 🤖 AI-powered resume analysis
+- 💡 Skill extraction & strengths detection
+- 🎯 Suggested job roles
+- ⚠️ Improvement recommendations
+- 🎤 Interview tips
+- ⭐ Candidate rating (out of 10)
 
-🎯 Key Features
+---
 
-📄 Upload resume (PDF)
+## 🏗️ System Architecture
 
-🧠 Semantic job matching (not keyword-based)
-
-📊 Match score (0–100%) with color coding
-
-🤖 AI-powered resume analysis
-
-💡 Skill extraction & strengths detection
-
-🎯 Suggested job roles
-
-⚠️ Improvement recommendations
-
-🎤 Interview tips
-
-⭐ Candidate rating (out of 100)
-
-# 🏗️ System Architecture
-
+```
 User (Browser - Streamlit)
-
         ↓
 Frontend (Streamlit)
-
         ↓
 FastAPI Backend
-
         ↓
 1. PDF Extraction ( PyMuPDF)
-
 2. NLP Preprocessing
-
 3. Sentence Embeddings
-
 4. Cosine Similarity Matching
-
 5. LLM Analysis (Groq - Llama3-70B)
         ↓
 JSON Response
         ↓
 Frontend Display
+```
 
-# 📁 Project Structure
+---
 
+## 📁 Project Structure
+
+```
 ai-resume-system/
-
 │
-
 ├── backend/
-
 │   ├── main.py
-
 │   ├── utils.py
-
 │   └── llm.py
-
 │
 ├── frontend/
-
 │   └── app.py
 │
 └── requirements.txt
+```
 
-# ⚙️ How It Works
-1. PDF Upload
+---
 
-2. Extracts text using  PyMuPDF.
+## ⚙️ How It Works
 
-3. Text Preprocessing
+1. **PDF Upload**  
+   Extracts text using ` PyMuPDF`.
 
-4. Cleans and normalizes text.
+2. **Text Preprocessing**  
+   Cleans and normalizes text.
 
-5. Semantic Embeddings
+3. **Semantic Embeddings**  
+   Uses `all-MiniLM-L6-v2` to create vectors.
 
-6. Uses all-MiniLM-L6-v2 to create vectors.
+4. **Similarity Matching**  
+   Uses cosine similarity to compare resume vs job description.
 
-7. Similarity Matching
+5. **LLM Analysis**  
+   Uses Llama3-70B via Groq API to generate:
+   - Skills
+   - Strengths
+   - Job roles
+   - Improvements
+   - Interview tips
+   - Rating
 
-8. Uses cosine similarity to compare resume vs job description.
+---
 
-LLM Analysis
+## 📦 Installation
 
-Uses Llama3-70B via Groq API to generate:
-
-. Skills
-
-. Strengths
-
-. Job roles
-
-. Improvements
-
-. Interview tips
-
-. Rating
-
-# 📦 Installation
-
+```bash
 git clone https://github.com/ArhamKakar/RecuriterIQ-AI-Resume-Screening-System
-
 cd ai-resume-screening-system
+```
 
-pip install fastapi uvicorn streamlit  PyMuPDF sentence-transformers scikit-learn numpy groq requests
+```bash
+pip install fastapi uvicorn streamlit pdfplumber sentence-transformers scikit-learn numpy groq requests
+```
 
-# ▶️ Run the Project
+---
 
-Start Backend
+## ▶️ Run the Project
 
+### Start Backend
+
+```bash
 cd backend
 uvicorn main:app --reload
+```
 
-Start Frontend
+### Start Frontend
 
+```bash
 cd frontend
 streamlit run app.py
+```
 
-Example Results
+---
 
-<img width="964" height="663" alt="Screenshot 2026-04-06 164800" src="https://github.com/user-attachments/assets/e1b32b3d-6929-4f82-a530-03291759fb99" />
+## 🧪 Example Results
 
-# 🌟 Why This Project is Unique
+| Job Role | Match Score | Result |
+|----------|-----------|--------|
+| AI Engineer | 64.65% | Moderate |
+| Mobile Developer | 23.71% | Weak |
+| Software Engineer | 31.32% | Weak |
 
-. 🧠 Semantic AI Matching
+---
 
-. ⚡ LLM-powered analysis
+## 🌟 Why This Project is Unique
 
-. 💸 Fully free & open source
+- 🧠 Semantic AI Matching  
+- ⚡ LLM-powered analysis  
+- 💸 Fully free & open source  
+- 🏗️ Production-ready architecture  
+- 🔌 Easily extensible  
 
-. 🏗️ Production-ready architecture
+---
 
-. 🔌 Easily extensible
+## 📈 Future Enhancements
 
-# 📈 Future Enhancements
+- Multi-resume ranking  
+- ATS scoring  
+- Skill gap detection  
+- Database integration  
+- Azure OpenAI deployment  
+- Chrome extension  
+- Email reports  
 
-. Multi-resume ranking
-
-. ATS scoring
-
-. Skill gap detection
-
-
-. Database integration
-
-. Azure OpenAI deployment
-
-. Chrome extension
-
-. Email reports
+---
