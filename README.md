@@ -87,32 +87,45 @@ JSON Response
 Frontend Display
 
 📁 Project Structure
+
 ai-resume-system/
+
 │
+
 ├── backend/
+
 │   ├── main.py
+
 │   ├── utils.py
+
 │   └── llm.py
+
 │
 ├── frontend/
+
 │   └── app.py
 │
 └── requirements.txt
 
 ⚙️ How It Works
 1. PDF Upload
+
 2. Extracts text using pdfplumber.
 
 3. Text Preprocessing
+
 4. Cleans and normalizes text.
 
 5. Semantic Embeddings
+
 6. Uses all-MiniLM-L6-v2 to create vectors.
 
 7. Similarity Matching
+
 8. Uses cosine similarity to compare resume vs job description.
 
 LLM Analysis
+
 Uses Llama3-70B via Groq API to generate:
 
 Skills
