@@ -1,0 +1,6 @@
+# Backend — install spaCy model first
+python -m spacy download en_core_web_sm
+cd backend && uvicorn main:app --reload --port 8000
+
+# Frontend (separate terminal)
+cd frontend && streamlit run app.py
