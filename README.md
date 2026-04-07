@@ -9,7 +9,7 @@ Embedded System | IoT | AI & AUTOMATION
 
 📧 muhammadarhamkakar27@gmail.com
 
-🔗 GitHub | LinkedIn
+🔗 Github | LinkedIn
 
 🚀 Tech Stack
 
