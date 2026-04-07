@@ -9,9 +9,9 @@ Embedded System | IoT | AI & AUTOMATION
 
 📧 muhammadarhamkakar27@gmail.com
 
-🔗 Github | LinkedIn
+# Github | LinkedIn
 
-🚀 Tech Stack
+# 🚀 Tech Stack
 
 Backend: FastAPI
 
@@ -27,7 +27,7 @@ PDF Parsing: PyMuPDF
 
 Language: Python 3.12
 
-📌 Problem Statement
+# 📌 Problem Statement
 
 Traditional resume screening is:
 
@@ -61,7 +61,7 @@ This system solves these problems using semantic search + LLM analysis, enabling
 
 ⭐ Candidate rating (out of 100)
 
-🏗️ System Architecture
+# 🏗️ System Architecture
 
 User (Browser - Streamlit)
 
@@ -86,7 +86,7 @@ JSON Response
         ↓
 Frontend Display
 
-📁 Project Structure
+# 📁 Project Structure
 
 ai-resume-system/
 
@@ -107,7 +107,7 @@ ai-resume-system/
 │
 └── requirements.txt
 
-⚙️ How It Works
+# ⚙️ How It Works
 1. PDF Upload
 
 2. Extracts text using  PyMuPDF.
@@ -140,7 +140,7 @@ Uses Llama3-70B via Groq API to generate:
 
 . Rating
 
-📦 Installation
+# 📦 Installation
 
 git clone https://github.com/tuahazaheen/ai-resume-screening-system.git
 
@@ -148,7 +148,7 @@ cd ai-resume-screening-system
 
 pip install fastapi uvicorn streamlit  PyMuPDF sentence-transformers scikit-learn numpy groq requests
 
-▶️ Run the Project
+# ▶️ Run the Project
 
 Start Backend
 
@@ -164,7 +164,7 @@ Example Results
 
 <img width="964" height="663" alt="Screenshot 2026-04-06 164800" src="https://github.com/user-attachments/assets/e1b32b3d-6929-4f82-a530-03291759fb99" />
 
-🌟 Why This Project is Unique
+# 🌟 Why This Project is Unique
 
 . 🧠 Semantic AI Matching
 
@@ -176,7 +176,7 @@ Example Results
 
 . 🔌 Easily extensible
 
-📈 Future Enhancements
+# 📈 Future Enhancements
 
 . Multi-resume ranking
 
