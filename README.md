@@ -142,7 +142,7 @@ Uses Llama3-70B via Groq API to generate:
 
 # 📦 Installation
 
-git clone https://github.com/tuahazaheen/ai-resume-screening-system.git
+git clone https://github.com/ArhamKakar/RecuriterIQ-AI-Resume-Screening-System
 
 cd ai-resume-screening-system
 
