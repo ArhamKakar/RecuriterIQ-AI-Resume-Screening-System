@@ -72,7 +72,7 @@ Frontend (Streamlit)
 FastAPI Backend
 
         ↓
-1. PDF Extraction (pdfplumber)
+1. PDF Extraction ( PyMuPDF)
 
 2. NLP Preprocessing
 
@@ -110,7 +110,7 @@ ai-resume-system/
 ⚙️ How It Works
 1. PDF Upload
 
-2. Extracts text using pdfplumber.
+2. Extracts text using  PyMuPDF.
 
 3. Text Preprocessing
 
@@ -128,10 +128,67 @@ LLM Analysis
 
 Uses Llama3-70B via Groq API to generate:
 
-Skills
-Strengths
-Job roles
-Improvements
-Interview tips
-Rating
+. Skills
 
+. Strengths
+
+. Job roles
+
+. Improvements
+
+. Interview tips
+
+. Rating
+
+📦 Installation
+
+git clone https://github.com/tuahazaheen/ai-resume-screening-system.git
+
+cd ai-resume-screening-system
+
+pip install fastapi uvicorn streamlit  PyMuPDF sentence-transformers scikit-learn numpy groq requests
+
+▶️ Run the Project
+
+Start Backend
+
+cd backend
+uvicorn main:app --reload
+
+Start Frontend
+
+cd frontend
+streamlit run app.py
+
+Example Results
+
+<img width="964" height="663" alt="Screenshot 2026-04-06 164800" src="https://github.com/user-attachments/assets/e1b32b3d-6929-4f82-a530-03291759fb99" />
+
+🌟 Why This Project is Unique
+
+. 🧠 Semantic AI Matching
+
+. ⚡ LLM-powered analysis
+
+. 💸 Fully free & open source
+
+. 🏗️ Production-ready architecture
+
+. 🔌 Easily extensible
+
+📈 Future Enhancements
+
+. Multi-resume ranking
+
+. ATS scoring
+
+. Skill gap detection
+
+
+. Database integration
+
+. Azure OpenAI deployment
+
+. Chrome extension
+
+. Email reports
